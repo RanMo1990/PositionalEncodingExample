@@ -81,8 +81,8 @@ from torch.utils.data import DataLoader, TensorDataset
 import pandas as pd
 
 
-For a guided walkthrough, see the 5-minute screencast linked in the project description.
-
+For a guided walkthrough, see the 5-minute screencast linked in the project description:
+https://www.youtube.com/watch?v=lyb0D6np8uE
 ---
 
 ## Author
