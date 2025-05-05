@@ -45,8 +45,8 @@ Positional encoding gives sequence models information about the order of tokens.
 - **Optimizer**: Adam for efficient gradient-based updates  
 - **Train/Test Split**: 80% training, 20% held-out testing  
 - **Experimental Grid**:  
-  - Attention layer depths: 1, 2, 4, 8, 16  
-  - Training epochs: 1, 4, 16, 64  
+  - Attention layer depths: 1, 4, 16  
+  - Training epochs: 1, 4, 16  
   - PE types: sinusoidal, sininit, learnable, RoPE, LRoPE  
 
 Models are trained on the synthetic dataset and then evaluated on test sequences to compute the average test loss, enabling fair comparison across encoding strategies and model capacities.
@@ -68,6 +68,18 @@ To fully understand each method’s strengths, we next explore the interaction o
 1. **Clone** this repository into your local environment.  
 2. **Install** dependencies with `pip install torch numpy pandas matplotlib scikit-learn`.  
 3. **Open** and run `PositionalEncodingExample.ipynb` in Jupyter to reproduce all experiments and visualizations.
+
+## Required Imports
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+import time
+import random
+import numpy as np
+from torch.utils.data import DataLoader, TensorDataset
+import pandas as pd
+
 
 For a guided walkthrough, see the 5-minute screencast linked in the project description.
 
